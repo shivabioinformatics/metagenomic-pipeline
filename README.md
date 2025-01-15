@@ -29,3 +29,5 @@ __Important Links in this section :)__
 - __[SRA-Toolkit](https://github.com/ncbi/sra-tools)__ - The NCBI SRA (Sequence Read Archive)
 
 ---
+
+This pipeline is not finished yet, the analysis will continue and this pipeline is being updated currently. 
