@@ -1,6 +1,8 @@
 
 
 # metagenomic-pipeline
+This pipeline is inspired by my master's thesis at Cal State LA. Given the unique ecological and geological aspects of my samples, which are from the Mojave Desert, I intend to focus on identifying light-related genes in these samples. I will filter low-quality reads, perform assembly, identify open reading frames associated with light-related genes, count the predicted proteins, and construct a phylogenetic tree.
+
 
 #### Definition of Metagenomic 
 This is shotgun meta genomic. We only look at a small fraction of the samples and DNA. 
