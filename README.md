@@ -13,3 +13,18 @@ Image Source:https://astrobiomike.github.io/misc/amplicon_and_metagen
 ## Download the datasets
 In this project 60 raw sequences were dowloaded from NCBI using SRA accesssion number through Inline `prefetch` Inline `fastqdump`. 
 **Make sure you install SRA toolkit**
+
+Indented code
+
+    // Some comments
+    $ fastq-dump --gzip --skip-technical --readids --read-filter pass --dumpbase --split-3 --clip --outdir path/to/reads/ SRR_ID
+
+this command is to download and process SRA data, ensuring it is properly filtered, compressed, and saved in the desired location, ready for downstream analysis.
+
+---
+__Important Links in this section :)__
+
+- __[fastqdump](https://rnnh.github.io/bioinfo-notebook/docs/fastq-dump.html)__ - Fastq-dump documention
+- __[SRA-Toolkit](https://github.com/ncbi/sra-tools)__ - The NCBI SRA (Sequence Read Archive)
+
+---
