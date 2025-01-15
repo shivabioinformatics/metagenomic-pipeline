@@ -10,6 +10,6 @@ Metagenomic answers question about whfo is there and what they are doing there.
 
 Image Source:https://astrobiomike.github.io/misc/amplicon_and_metagen
 
-
-___
-***
+## Download the datasets
+In this project 60 raw sequences were dowloaded from NCBI using SRA accesssion number through Inline `prefetch` Inline `fastqdump`. 
+**Make sure you install SRA toolkit**
