@@ -12,7 +12,4 @@ Image Source:https://astrobiomike.github.io/misc/amplicon_and_metagen
 
 
 ___
-
----
-
 ***
