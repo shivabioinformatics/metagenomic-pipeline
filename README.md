@@ -31,3 +31,13 @@ __Important Links in this section :)__
 ---
 
 This pipeline is not finished yet, the analysis will continue and this pipeline is being updated currently. 
+
+
+With one sample SRR# 
+```
+prefetch SRR#
+```
+then fastq-dump, the SRR accession numbers should found under project name at NCBI under samples 
+```
+prefetch SRR#
+```
