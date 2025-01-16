@@ -103,7 +103,7 @@ This command needs to be run on screen since it can takes couple days its a huge
 ---
 __Important links in this section :)__
 
-- __[Megahit](https://academic.oup.com/bioinformatics/article/31/10/1674/177884__ - Quality Control before trimming and filtering since each data is different 
+- __[Megahit](https://academic.oup.com/bioinformatics/article/31/10/1674/177884__) - Quality Control before trimming and filtering since each data is different 
 - __[Megahit GitHub](https://github.com/voutcn/megahit)__ - read trimming tool for Illumina NGS
 
 ---
