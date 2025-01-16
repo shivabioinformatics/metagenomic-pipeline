@@ -23,7 +23,7 @@ In this project 60 raw sequences were dowloaded from NCBI using SRA accesssion n
 this command is to download and process SRA data, ensuring it is properly filtered, compressed, and saved in the desired location, ready for downstream analysis.
 
 ---
-__Important Links in this section :)__
+__Important links in this section :)__
 
 - __[fastqdump](https://rnnh.github.io/bioinfo-notebook/docs/fastq-dump.html)__ - Fastq-dump documention
 - __[SRA-Toolkit](https://github.com/ncbi/sra-tools)__ - The NCBI SRA (Sequence Read Archive)
@@ -64,7 +64,7 @@ A highly user-friendly tool, **FastQC**, provides a comprehensive overview of da
 most often for quality filtering due to its flexibility would be **Trimmomatic**.
 
 ---
-__Important Links in this section :)__
+__Important links in this section :)__
 
 - __[FastQ](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)__ - Quality Control before trimming and filtering since each data is different 
 - __[Trimmomatic](http://www.usadellab.org/cms/?page=trimmomatic)__ - read trimming tool for Illumina NGS
