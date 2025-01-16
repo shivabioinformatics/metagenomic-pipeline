@@ -55,3 +55,21 @@ Here my list.txt file is the file containg all of my samples id manes and use to
 3. Converts the SRA file into **FASTQ format** with fastq-dump, **splitting** paired-end reads into separate files if applicable.
 4. Repeats this process for every accession number in the list.
 
+## Quality trimming/filtering
+
+Typically, sequencing facilities provide sequencing data in FASTQ files. The FASTQ format consists of four lines per sequence: (1) the sequence identifier (header) prefixed with an "@" symbol, (2) the sequence itself, (3) a "+" symbol (sometimes followed by a repeat of the header), and (4) quality scores for each base. With Illumina sequencing, these quality scores indicate the software's confidence in each base call. Although this system isn’t flawless—factors like polymerase errors and systematic biases can impact accuracy without being reflected in the quality scores—performing quality-based filtering remains crucial.
+
+A highly user-friendly tool, **FastQC**, provides a comprehensive overview of data quality. It can identify common issues and guide your quality-filtering decisions effectively.
+
+most often for quality filtering due to its flexibility would be **Trimmomatic**.
+
+---
+__Important Links in this section :)__
+
+- __[FastQ](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)__ - Quality Control before trimming and filtering since each data is different 
+- __[Trimmomatic](http://www.usadellab.org/cms/?page=trimmomatic)__ - read trimming tool for Illumina NGS
+
+---
+
+
+## Assembly
