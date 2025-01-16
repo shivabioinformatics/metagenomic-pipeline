@@ -50,8 +50,8 @@ for i in$(cat <SRR list>.txt) do ;  prefetch $i ; fastq-dump --splitfiles $i
 ```
 Here my list.txt file is the file containg all of my samples id manes and use to to  processes a list of Sequence Read Archive (SRA) accession numbers (e.g., SRR1234567, SRR1234568) from a file named <SRR list>.txt. 
 
-1.Reads the file **<SRR list>**.txt line by line.
-2.Downloads the **SRA** file corresponding to each accession number using prefetch.
-3.Converts the SRA file into **FASTQ format** with fastq-dump, **splitting** paired-end reads into separate files if applicable.
-4.Repeats this process for every accession number in the list.
+1. Reads the file **<SRR list>**.txt line by line.
+2. Downloads the **SRA** file corresponding to each accession number using prefetch.
+3. Converts the SRA file into **FASTQ format** with fastq-dump, **splitting** paired-end reads into separate files if applicable.
+4. Repeats this process for every accession number in the list.
 
