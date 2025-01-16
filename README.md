@@ -33,7 +33,7 @@ __Important Links in this section :)__
 This pipeline is not finished yet, the analysis will continue and this pipeline is being updated currently. 
 
 
-With one sample SRR# 
+With **one** sample SRR# 
 ```
 prefetch SRR#
 ```
@@ -41,3 +41,11 @@ then fastq-dump, the SRR accession numbers should found under project name at NC
 ```
 prefetch SRR#
 ```
+
+For loop for more than one metagenome you can process it faster by writing a for loop in bash download all the samples in this case 60 samples. 
+It is always a good practice to write all the ID names in a seperate files (.txt) for varieties command. Here we can use it for parallel download. 
+
+```
+for i in$(cat <SRR list>.txt) do ;  prefetch $i ; fastq-dump --splitfiles $i
+```
+
