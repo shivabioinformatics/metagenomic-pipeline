@@ -73,3 +73,37 @@ __Important links in this section :)__
 
 
 ## Assembly
+Assembly is basically like a puzzle that has so many pieces and you have to build it up and guess which piece belong to where. There are varites of assembler are out there and each has their own pros and cons. Here I will intriduce two assemblers which are more popular for microbial genomics including metagenomics. 
+
+One of them is MEGAHIT which is a denovo assembler meaning without templates. It is designed for large and complex metagenomic datasets, using a succinct de Bruijn graph (SdBG) approach for memory efficiency and speed. It begins by preprocessing reads to remove low-quality sequences and adapters, followed by extracting k-mers (substrings of length \( k \)) across multiple \( k \)-mer sizes (multi-\( k \) strategy) to improve assembly accuracy. The SdBG efficiently represents overlaps between k-mers, reducing memory usage. MEGAHIT simplifies the graph by removing tips (dead-ends), bubbles (parallel paths), and collapsing repeats, ensuring a cleaner assembly. Iterative assembly refines the graph using smaller \( k \)-mers for sensitivity to low-abundance reads and larger \( k \)-mers for resolving repetitive regions. Contigs are then constructed from the simplified graph and output in FASTA format. Its multi-threading capability enhances speed, and the use of multi-\( k \) improves assembly quality for datasets with varying coverage, making MEGAHIT ideal for metagenomic studies on standard computational resources.
+
+megahit installation 
+```
+conda install -c bioconda megahit
+```
+
+```
+# Generate a sequence of numbers from 1 to 60 and run MEGAHIT in parallel for each sample
+seq 60 | parallel \
+  megahit \
+    -1 /data/Biocrust/2024_Clean/Raw_Reads/ordered_fastq_raws/Trimmed/{}_R1P.fastq \  # Forward reads (R1)
+    -2 /data/Biocrust/2024_Clean/Raw_Reads/ordered_fastq_raws/Trimmed/{}_R2P.fastq \  # Reverse reads (R2)
+    -o {}_Megahit_out  # Output directory for each sample
+```
+
+1. seq 60: Generates numbers 1 through 60, representing sample identifiers.
+2. parallel: Runs MEGAHIT commands concurrently for multiple samples.
+3. -1 and -2: Paths to forward (R1P.fastq) and reverse (R2P.fastq) read files.
+The {} placeholder is replaced with numbers from seq 60 (e.g., 1_R1P.fastq, 2_R1P.fastq).
+4. -o: Specifies output directories named {sample_number}_Megahit_out for each dataset.
+
+This command needs to be run on screen since it can takes couple days its a huge datasets: 1.5 TB
+
+
+---
+__Important links in this section :)__
+
+- __[Megahit](https://academic.oup.com/bioinformatics/article/31/10/1674/177884__ - Quality Control before trimming and filtering since each data is different 
+- __[Megahit GitHub](https://github.com/voutcn/megahit)__ - read trimming tool for Illumina NGS
+
+---
