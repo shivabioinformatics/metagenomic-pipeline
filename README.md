@@ -113,13 +113,13 @@ Screen, also known as GNU Screen, is a terminal multiplexer. This means you can 
 
 The screen package is pre-installed on most Linux distros nowadays. You can check if it is installed on your system by typing: 
 
-    // Some comments
+  
     screen --version
 
 
 to see the lists of attached screen
   
-    //
+
     screen -ls
 
 
