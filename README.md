@@ -107,8 +107,34 @@ __Important links in this section :)__
 - __[Megahit GitHub](https://github.com/voutcn/megahit)__ - read trimming tool for Illumina NGS
 
 ---
+When working on large datasets and running an analysis, usually could take hours or even days. So knowing running analysis on **screen** is an important knowledge and tool to use. Where you're running a lengthy task on a remote machine, and then your connection drops, causing the SSH session to terminate and your progress to be lost. There is a utility called `screen` that allows us to resume the sessions.
+
+Screen, also known as GNU Screen, is a terminal multiplexer. This means you can start a screen session and open multiple windows (virtual terminals) within it. The processes running in Screen will keep running even if their window is not visible, and will continue to do so even if you get disconnected.
+
+The screen package is pre-installed on most Linux distros nowadays. You can check if it is installed on your system by typing: 
+
+//
+screen --version
+
+to see the lists of attached screen
+
+//
+screen -ls 
+
+
+
 
 
 
 
 After assembling the data, I will search for open reading frames of genes that encode light-related pathways. This exploration stems from my curiosity about how bacteria survive in such extreme environments. I aim to uncover the mechanisms of energy production, primarily focusing on **photosynthesis** as the main pathway, along with alternative, less energetically demanding mechanisms. Notably, **photosynthesis** is highly energy-intensive for microbial species, making these alternative pathways particularly intriguing.
+
+
+
+
+
+
+
+
+
+This pipeline is not finished yet, the analysis will continue and this pipeline is being updated currently. 
