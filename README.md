@@ -133,6 +133,9 @@ After assembling the data, I will search for open reading frames of genes that e
 
 
 
+```
+/MagicLamp.py Lucifer -bin_dir /directorty-of-your-stored-genomes-or-contigs -bin_ext fna -out Lucifer_out --norm
+```
 
 
 
