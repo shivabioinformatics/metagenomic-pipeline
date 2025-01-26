@@ -39,7 +39,7 @@ prefetch SRR#
 ```
 then fastq-dump, the SRR accession numbers should found under project name at NCBI under samples 
 ```
-prefetch SRR#
+fasterq-dump SRR#
 ```
 
 For loop for more than one metagenome you can process it faster by writing a for loop in bash download all the samples in this case 60 samples. 
