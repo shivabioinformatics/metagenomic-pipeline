@@ -136,18 +136,9 @@ It requires building a profile based on a training datasets. It is like machine 
 HMM starts with a multiple sequence alignment. It targets region that are conserved versus what is less conserved. This is where the accuracy and sensitivity come in. 
 
 
-![pic2](clustal_example.jpg)
-```
-/MagicLamp.py Lucifer -bin_dir /directorty-of-your-stored-genomes-or-contigs -bin_ext fna -out Lucifer_out --norm
-```
-
-
-
-
-
-This pipeline is not finished yet, the analysis will continue and this pipeline is being updated currently. 
-
-
+<div style="text-align: center;">
+    <img src="clustal_example.jpg" alt="pic2" />
+</div>
 
 ```
 /MagicLamp.py Lucifer -bin_dir /directorty-of-your-stored-genomes-or-contigs -bin_ext fna -out Lucifer_out --norm
@@ -158,3 +149,4 @@ This pipeline is not finished yet, the analysis will continue and this pipeline 
 
 
 This pipeline is not finished yet, the analysis will continue and this pipeline is being updated currently. 
+
