@@ -141,7 +141,7 @@ HMM starts with a multiple sequence alignment. It targets region that are conser
 </div>
 source: http://compbio.pbworks.com/w/page/16252909/Multiple%20Sequence%20Alignment
 
--
+
 
 The sotware that has been used here to look for photon related genes in my assemblies file is **MagicLamp** https://github.com/Arkadiy-Garber/MagicLamp which is a sotware for annotations genomic or metagenomic datasets and it is HMM sets. There are different genies in these software that comes with the package when installing it on your system. However, there is options where your unique questions and genies cant be found here and you can actully upload your costume HMM which is an easy process. More information and installation can be found in the github page. 
 
