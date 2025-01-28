@@ -129,7 +129,23 @@ to see the lists of attached screen
 
 
 After assembling the data, I will search for open reading frames of genes that encode light-related pathways. This exploration stems from my curiosity about how bacteria survive in such extreme environments. I aim to uncover the mechanisms of energy production, primarily focusing on **photosynthesis** as the main pathway, along with alternative, less energetically demanding mechanisms. Notably, **photosynthesis** is highly energy-intensive for microbial species, making these alternative pathways particularly intriguing.
+### HMM Search
+Hidden Marjov model (HMM) is position sensitive models and it is a probabibilistic approach where it incorporate random variables and probability distributions into the model of an event of phenomenon. 
+It requires building a profile based on a training datasets. It is like machine learning approaches.  It is very sensitive. 
 
+HMM starts with a multiple sequence alignment. It targets region that are conserved versus what is less conserved. This is where the accuracy and sensitivity come in. 
+
+
+![pic2](clustal_example.jpg)
+```
+/MagicLamp.py Lucifer -bin_dir /directorty-of-your-stored-genomes-or-contigs -bin_ext fna -out Lucifer_out --norm
+```
+
+
+
+
+
+This pipeline is not finished yet, the analysis will continue and this pipeline is being updated currently. 
 
 
 
