@@ -152,10 +152,22 @@ if you typpe Lucifer.py -h you can see all the different flags for this specific
 
 
 
+
+This is how you set up after installing magiclamp. 
+if you typpe Lucifer.py -h you can see all the different flags for this specific command. 
+
 ```
 conda activate magiclamp
 MagicLamp.py Lucifer -bin_dir /directorty-of-your-stored-genomes-or-contigs -bin_ext fna -out Lucifer_out --norm
 ```
+
+After running magiclamp, you will get two different files, both are in CSV file. One is a heat map (basically counting the hits for each genes) and the othe is providing the predicted protein sequence with the score value, and the name of the predicted protein and ID number. 
+
+The heatmap hits will be used to run it on an R script for dot plots and the other csv summary file will be used for downatream analysis such as alignment and phylogentic tree constructions.
+
+
+
+This pipeline is not finished yet, the analysis will continue and this pipeline is being updated currently. 
 
 
 
