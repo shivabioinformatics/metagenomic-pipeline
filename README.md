@@ -181,7 +181,12 @@ When building custom protein/domain families (e.g., Pfam).
 
 
 
+---
+__Important links in this section :)__
 
+- __[MagicLamp](https://github.com/Arkadiy-Garber/MagicLamp)__ - A software package for annotation of genomic datasets using discreet HMM sets. 
+
+---
 
 This pipeline is not finished yet, the analysis will continue and this pipeline is being updated currently. 
 
