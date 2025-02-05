@@ -171,9 +171,10 @@ The heatmap hits will be used to run it on an R script for dot plots and the oth
 #### Pairwise Sequence Alignment/Multiple Sequence Alignment
 In this approach, the aligner compares sequeces directlty based on nucleotides or amino acid similarities usign subsitution matrices ( BLOSUM, PAM). It works well for closely related sequences but struggle with the distant homology detection. It penlized with fixed gap penalities. <br>
 
+#### Profile Hidden Markov Model (HMM) Alignment
 However, in pHMM, it uses statistical model (profile HMM) trained on multiple sequence alignment to capture position-specific conservation patterns (insertions, deletions, highly conserved positions). It is excelent for distant homologs. <br>
 
-When to Use Profile HMMs?<br>
+##### When to Use Profile HMMs?<br>
 When aligning sequences with high variability but conserved functional motifs.
 When searching for remote homologs in metagenomic or evolutionary studies.
 When building custom protein/domain families (e.g., Pfam).
