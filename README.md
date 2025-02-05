@@ -127,9 +127,9 @@ to see the lists of attached screen
 
 
 
----
+
 After assembling the data, I will search for open reading frames of genes that encode light-related pathways. This exploration stems from my curiosity about how bacteria survive in such extreme environments. I aim to uncover the mechanisms of energy production, primarily focusing on **photosynthesis** as the main pathway, along with alternative, less energetically demanding mechanisms. Notably, **photosynthesis** is highly energy-intensive for microbial species, making these alternative pathways particularly intriguing.
----
+
 
 
 ### HMM Search
@@ -167,7 +167,6 @@ The heatmap hits will be used to run it on an R script for dot plots and the oth
 
 
 
-This pipeline is not finished yet, the analysis will continue and this pipeline is being updated currently. 
 
 
 
