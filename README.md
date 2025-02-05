@@ -133,7 +133,7 @@ After assembling the data, I will search for open reading frames of genes that e
 
 
 ### HMM Search
-Hidden Marjov model (HMM) is position sensitive models and it is a probabibilistic approach where it incorporate random variables and probability distributions into the model of an event of phenomenon. 
+***Hidden Markov Model*** (HMM) is position sensitive models and it is a probabibilistic approach where it incorporate random variables and probability distributions into the model of an event of phenomenon. 
 It requires building a profile based on a training datasets. It is like machine learning approaches.  It is very sensitive. 
 
 HMM starts with a multiple sequence alignment. It targets region that are conserved versus what is less conserved. This is where the accuracy and sensitivity come in. 
@@ -166,7 +166,17 @@ After running magiclamp, you will get two different files, both are in CSV file.
 The heatmap hits will be used to run it on an R script for dot plots and the other csv summary file will be used for downatream analysis such as alignment and phylogentic tree constructions.
 
 
+### Why HMM Search/Probabilistic Approach to Homology
 
+#### Pairwise Sequence Alignment/Multiple Sequence Alignment
+In this approach, the aligner compares sequeces directlty based on nucleotides or amino acid similarities usign subsitution matrices ( BLOSUM, PAM). It works well for closely related sequences but struggle with the distant homology detection. It penlized with fixed gap penalities. <br>
+
+However, in pHMM, it uses statistical model (profile HMM) trained on multiple sequence alignment to capture position-specific conservation patterns (insertions, deletions, highly conserved positions). It is excelent for distant homologs. <br>
+
+When to Use Profile HMMs?<br>
+When aligning sequences with high variability but conserved functional motifs.
+When searching for remote homologs in metagenomic or evolutionary studies.
+When building custom protein/domain families (e.g., Pfam).
 
 
 
