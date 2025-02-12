@@ -188,5 +188,18 @@ __Important links in this section :)__
 
 ---
 
+After running magiclamp (took couple of days), the output files contain 2 csv file swhich are important part of the analysis of the predicted protein. The heatmap.csv file is a dot plot illustrating the abundance of each gene within the genome or metagenome and this is important and required if vizulation is needed, various R packages should be installed and available for use with the Rscript command-line tool.
+
+
+The othe CSV file is 
+
+---
+__Important links in this section :)__
+
+- __[MagicLamp-RScripts](https://github.com/Arkadiy-Garber/MagicLamp/tree/master/rscripts)__ - Dot Plots R scripts
+
+---
+
+
 This pipeline is not finished yet, the analysis will continue and this pipeline is being updated currently. 
 
