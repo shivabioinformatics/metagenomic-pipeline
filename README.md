@@ -42,16 +42,16 @@ then fastq-dump, the SRR accession numbers should found under project name at NC
 fasterq-dump SRR#
 ```
 
-For loop for more than one metagenome you can process it faster by writing a for loop in bash download all the samples in this case 60 samples. 
-It is always a good practice to write all the ID names in a seperate files (.txt) for varieties command. Here we can use it for parallel download. 
+For loop for more than one metagenome, you can process it faster by writing a for loop in bash download all the samples in this case 60 samples. 
+It is always a good practice to write all the ID names in separate files (.txt) for a variety of commands. Here we can use it for parallel download. 
 
 ```
 for i in$(cat <SRR list>.txt) do ;  prefetch $i ; fastq-dump --splitfiles $i
 ```
-Here my list.txt file is the file containg all of my samples id manes and use to to  processes a list of Sequence Read Archive (SRA) accession numbers (e.g., SRR1234567, SRR1234568) from a file named <SRR list>.txt. 
+Here my list.txt file is the file containing all of my sample id manes and is used to  process a list of Sequence Read Archive (SRA) accession numbers (e.g., SRR1234567, SRR1234568) from a file named <SRR list>.txt. 
 
 1. Reads the file **<SRR list>**.txt line by line.
-2. Downloads the **SRA** file corresponding to each accession number using prefetch.
+2. Download the **SRA** file corresponding to each accession number using Prefetch.
 3. Converts the SRA file into **FASTQ format** with fastq-dump, **splitting** paired-end reads into separate files if applicable.
 4. Repeats this process for every accession number in the list.
 
@@ -73,9 +73,9 @@ __Important links in this section :)__
 
 
 ## Assembly
-Assembly is basically like a puzzle that has so many pieces and you have to build it up and guess which piece belong to where. There are varites of assembler are out there and each has their own pros and cons. Here I will intriduce two assemblers which are more popular for microbial genomics including metagenomics. 
+Assembly is basically like a puzzle that has so many pieces and you have to build it up and guess which piece belong to where. There are varieties of assemblers are out there and each has its own pros and cons. Here I will introduce two assemblers which are more popular for microbial genomics including metagenomics. 
 
-One of them is MEGAHIT which is a denovo assembler meaning without templates. It is designed for large and complex metagenomic datasets, using a succinct de Bruijn graph (SdBG) approach for memory efficiency and speed. It begins by preprocessing reads to remove low-quality sequences and adapters, followed by extracting k-mers (substrings of length \( k \)) across multiple \( k \)-mer sizes (multi-\( k \) strategy) to improve assembly accuracy. The SdBG efficiently represents overlaps between k-mers, reducing memory usage. MEGAHIT simplifies the graph by removing tips (dead-ends), bubbles (parallel paths), and collapsing repeats, ensuring a cleaner assembly. Iterative assembly refines the graph using smaller \( k \)-mers for sensitivity to low-abundance reads and larger \( k \)-mers for resolving repetitive regions. Contigs are then constructed from the simplified graph and output in FASTA format. Its multi-threading capability enhances speed, and the use of multi-\( k \) improves assembly quality for datasets with varying coverage, making MEGAHIT ideal for metagenomic studies on standard computational resources.
+One of them is MEGAHIT which is a de novo assembler meaning without templates. It is designed for large and complex metagenomic datasets, using a succinct de Bruijn graph (SdBG) approach for memory efficiency and speed. It begins by preprocessing reads to remove low-quality sequences and adapters, followed by extracting k-mers (substrings of length \( k \)) across multiple \( k \)-mer sizes (multi-\( k \) strategy) to improve assembly accuracy. The SdBG efficiently represents overlaps between k-mers, reducing memory usage. MEGAHIT simplifies the graph by removing tips (dead-ends), bubbles (parallel paths), and collapsing repeats, ensuring a cleaner assembly. Iterative assembly refines the graph using smaller \( k \)-mers for sensitivity to low-abundance reads and larger \( k \)-mers for resolving repetitive regions. Contigs are then constructed from the simplified graph and output in FASTA format. Its multi-threading capability enhances speed, and the use of multi-\( k \) improves assembly quality for datasets with varying coverage, making MEGAHIT ideal for metagenomic studies on standard computational resources.
 
 megahit installation 
 ```
@@ -97,7 +97,7 @@ seq 60 | parallel \
 The {} placeholder is replaced with numbers from seq 60 (e.g., 1_R1P.fastq, 2_R1P.fastq).
 4. -o: Specifies output directories named {sample_number}_Megahit_out for each dataset.
 
-This command needs to be run on screen since it can takes couple days its a huge datasets: 1.5 TB
+This command needs to be run on screen since it can take couple days its a huge dataset: 1.5 TB
 
 
 ---
@@ -117,7 +117,7 @@ The screen package is pre-installed on most Linux distros nowadays. You can chec
     screen --version
 
 
-to see the lists of attached screen
+to see the lists of the attached screen
   
 
     screen -ls
