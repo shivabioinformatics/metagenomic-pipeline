@@ -199,7 +199,10 @@ __Important links in this section :)__
 ---
 Here I will past the R-Dot plot of the result of the magiclamp softwar that we ran on our contigs and here since we specifically look at the genes that are photon related (Lucifer genie) or light related we can see which genes are involved as a response to light. 
 
-![A survey of photo-related genes. Profile Hidden Markov Model survey of genes related to photobiology.](2.png)
+<figure>
+  <img src="2.png" alt="A survey of photo-related genes. Profile Hidden Markov Model survey of genes related to photobiology.">
+  <figcaption>A survey of photo-related genes. Profile Hidden Markov Model survey of genes related to photobiology.</figcaption>
+</figure>
 
 Here as you can see in the figure about 
 
