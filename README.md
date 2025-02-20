@@ -198,14 +198,17 @@ __Important links in this section :)__
 
 ---
 Here I will past the R-Dot plot of the result of the magiclamp softwar that we ran on our contigs and here since we specifically look at the genes that are photon related (Lucifer genie) or light related we can see which genes are involved as a response to light. 
+___ 
 
 <figure>
   <img src="2.png" alt="Figure 2. A survey of photo-related genes. Profile Hidden Markov Model survey of genes related to photobiology.">
   <figcaption>A survey of photo-related genes. Profile Hidden Markov Model survey of genes related to photobiology.</figcaption>
 </figure>
 
+___
 
 Here as you can see in the figure about we see all the genes associated with light such as **Photosynthesis** which is shows as **PsaA_PsaB** , ***Photo_RC** (phot reaction center which is responsible for the initial electron transfer reactions triggered by light absorption), **PSII** PSII is responsible for the initial step of oxygenic photosynthesis, splitting water molecules to generate electrons, protons, and oxygen gas. All of these genes are all have big dots plots which suggests alot of activities being carried out by these microbes across various habitats (hypolith versus biocrust). In this context, hypolith envionement refers to communites under rocks especially quartz rocks and biocrust refers to microbial communites exposed to the sun directly on the surface layers of Mojave. 
+___
 
 This pipeline is not finished yet, the analysis will continue and this pipeline is being updated currently. 
 
