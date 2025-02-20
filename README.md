@@ -197,6 +197,9 @@ __Important links in this section :)__
 - __[MagicLamp-RScripts](https://github.com/Arkadiy-Garber/MagicLamp/tree/master/rscripts)__ - Dot Plots R scripts
 
 ---
+Here I will past the RDor plot of the result of the magiclamp softwar that we ran on our contigs and here since we specifically look at the genes that are photon related or light related we can see which genes are involved as a response to light. 
+
+![pic2](2.png)
 
 
 This pipeline is not finished yet, the analysis will continue and this pipeline is being updated currently. 
