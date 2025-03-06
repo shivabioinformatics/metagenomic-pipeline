@@ -211,5 +211,5 @@ Here as you can see in the figure about we see all the genes associated with lig
 ___
 
 
-this This piPeline is not finished yet, the analysis will continue and this pipeline is being updated currently. 
+This piPeline is not finished yet, the analysis will continue and this pipeline is being updated currently. 
 
