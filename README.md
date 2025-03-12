@@ -195,7 +195,7 @@ __Important links in this section :)__
 - __[MagicLamp-RScripts](https://github.com/Arkadiy-Garber/MagicLamp/tree/master/rscripts)__ - Dot Plots R scripts
 
 ---
-Here I will past the R-Dot plot of the result of the magiclamp softwar that we ran on our contigs and here since we specifically look at the genes that are photon related (Lucifer genie) or light related we can see which genes are involved as a response to light. 
+Here, I will past the R-Dot plot of the result of the magiclamp software that we ran on our contigs, and here, since we specifically look at the genes that are photon-related (Lucifer genie) or light-related, we can see which genes are involved as a response to light. 
 ___ 
 
 <figure>
@@ -205,9 +205,9 @@ ___
 
 ___
 
-Here as you can see in the figure about we see all the genes associated with light such as **Photosynthesis** which is shows as **PsaA_PsaB** , ***Photo_RC** (photo reaction center which is responsible for the initial electron transfer reactions triggered by light absorption), **PSII** is responsible for the initial step of oxygenic photosynthesis, splitting water molecules to generate electrons, protons, and oxygen gas. All of these genes are all have big dots plots which suggests alot of activities being carried out by these microbes across various habitats (hypolith versus biocrust). In this context, hypolith envionement refers to communites under rocks especially quartz rocks and biocrust refers to microbial communites exposed to the sun directly on the surface layers of Mojave. 
+Here as you can see in the figure about we see all the genes associated with light such as **Photosynthesis** which is shows as **PsaA_PsaB**, ***Photo_RC** (photo reaction center which is responsible for the initial electron transfer reactions triggered by light absorption), **PSII** is responsible for the initial step of oxygenic photosynthesis, splitting water molecules to generate electrons, protons, and oxygen gas. All of these genes have big dot plots, which suggests many activities being carried out by these microbes across various habitats (hypolith versus biocrust). In this context, hypolith environment refers to communities under rocks, especially quartz rocks, and biocrust refers to microbial communities exposed to the sun directly on the surface layers of Mojave. 
 ___
 
 
-This piPeline is not finished yet, the analysis will continue and this pipeline is being updated currently. 
+This pipeline is not finished yet; the analysis will continue, and this pipeline is currently being updated. 
 
