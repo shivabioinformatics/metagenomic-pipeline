@@ -209,5 +209,11 @@ Here as you can see in the figure about we see all the genes associated with lig
 ___
 
 
-This pipeline is not finished yet; the analysis will continue, and this pipeline is currently being updated. 
+This dot plot is the first step in answering this hypothesis: whether the biocrust microbial community in the Mojave desert carries any proteorhopsin genes. Based on the 
+We can safely say that the dot for proteorhopsin genes, which are in the Y-axis, are prevalent among different microhabitats. 
+<figure>
+  <img src="metagenome_pipeline_workflow.png" >
+  <figcaption> Metagenome Pipeline Workflow.</figcaption>
+</figure>
 
+This pipeline is not finished yet; the analysis will continue, and this pipeline is currently being updated. 
