@@ -148,7 +148,7 @@ to see the lists of the attached screen
 
 After assembling the data, I will search for open reading frames of genes that encode light-related pathways. This exploration stems from my curiosity about how bacteria survive in such extreme environments. I aim to uncover the mechanisms of energy production, primarily focusing on **photosynthesis** as the main pathway, along with alternative, less energetically demanding mechanisms. Notably, **photosynthesis** is highly energy-intensive for microbial species, making these alternative pathways particularly intriguing.
 
-Assembly Statistics: 
+****Assembly Statistics:**** 
 | **Assembly Metric**              | **Value** | **Description**                                                              |
 | -------------------------------- | --------- | ---------------------------------------------------------------------------- |
 | **Number of contigs (≥1000 bp)** | 66,176    | Total count of contigs longer than 1,000 base pairs                          |
@@ -162,6 +162,7 @@ Assembly Statistics:
 This is low, but for a highly diverse metagenome like the Mojave Desert microbial communities, it's often the best you can achieve with short reads alone. Metagenomes contain communities with vastly different abundances. Low-abundance species will yield very shallow coverage, making it impossible to assemble their genomes into long contigs.
 
 **Largest contig: 406,396 bp**
+
 The existence of a contig this long is positive. It suggests that at least one or a few high-abundance organisms in your sample had high enough coverage to assemble well, potentially yielding partial (or even near-complete) draft genomes later.
 
 
