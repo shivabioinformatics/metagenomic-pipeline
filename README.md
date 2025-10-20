@@ -68,7 +68,33 @@ __Important links in this section :)__
 - __[Trimmomatic](http://www.usadellab.org/cms/?page=trimmomatic)__ - read trimming tool for Illumina NGS
 
 ---
+Trimming using trimmomatic and the parametrets that were used is shown below:
+```
+# Run Trimmomatic in parallel for multiple paired-end FASTQ files
+# Adjust NUM_SAMPLES, THREADS, and paths as needed
 
+NUM_SAMPLES=60
+THREADS=8
+TRIMMOMATIC_JAR=/path/to/Trimmomatic-0.39/trimmomatic-0.39.jar
+ADAPTERS=/path/to/Trimmomatic-0.39/adapters/TruSeq3-PE.fa
+
+seq $NUM_SAMPLES | parallel "
+  java -jar ${TRIMMOMATIC_JAR} PE -threads ${THREADS} -phred33 \
+  {}_1.fastq {}_2.fastq \
+  {}_R1P.fastq {}_R1UP.fastq {}_R2P.fastq {}_R2UP.fastq \
+  ILLUMINACLIP:${ADAPTERS}:2:30:10 \
+  LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+"
+
+```
+How it trimmomatic is trimming: 
+| Step             | Parameter            | What it does                       | Threshold                 |
+| ---------------- | -------------------- | ---------------------------------- | ------------------------- |
+| Adapter trimming | `ILLUMINACLIP`       | Removes adapter contamination      | Mismatch ≤2, score ≥30/10 |
+| 5′ trim          | `LEADING:3`          | Removes low-quality bases at start | Q < 3                     |
+| 3′ trim          | `TRAILING:3`         | Removes low-quality bases at end   | Q < 3                     |
+| Quality trimming | `SLIDINGWINDOW:4:15` | Cuts when average Q < 15 over 4 bp | Q < 15                    |
+| Length filter    | `MINLEN:36`          | Drops reads shorter than 36 bp     | 36 bp                     |
 
 ## Assembly
 Assembly is basically like a puzzle that has so many pieces and you have to build it up and guess which piece belong to where. There are varieties of assemblers are out there and each has its own pros and cons. Here I will introduce two assemblers which are more popular for microbial genomics including metagenomics. 
