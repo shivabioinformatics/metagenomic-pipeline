@@ -175,7 +175,7 @@ HMM starts with a multiple sequence alignment. It targets region that are conser
 
 
 <div style="text-align: center;">
-    <img src="clustal_example.jpg" alt="pic2" />
+    <img src="clustal_example.jpg" alt="pic2" width="700" />
 </div>
 source: http://compbio.pbworks.com/w/page/16252909/Multiple%20Sequence%20Alignment
 
