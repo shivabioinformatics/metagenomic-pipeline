@@ -249,7 +249,7 @@ ___
 This dot plot is the first step in answering this hypothesis: whether the biocrust microbial community in the Mojave desert carries any proteorhopsin genes. Based on the 
 We can safely say that the dot for proteorhopsin genes, which are in the Y-axis, are prevalent among different microhabitats. 
 <figure>
-  <img src="metagenomic_pipeline.png" >
+  <img src="pipeline_metagenomic.png" >
   <figcaption> Metagenome Pipeline Workflow.</figcaption>
 </figure>
 
