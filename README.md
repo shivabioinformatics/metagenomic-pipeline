@@ -1,21 +1,34 @@
 # metagenomic-pipeline
+
+## Research Background Overview
 This pipeline is inspired by my master's thesis at Cal State LA. Given the unique ecological and geological aspects of my samples, which are from the Mojave Desert, I intend to focus on identifying light-related genes in these samples. I will filter low-quality reads, perform assembly, identify open reading frames associated with light-related genes, count the predicted proteins, and construct a phylogenetic tree.
 
 
 #### Definition of Metagenomic 
 This is shotgun metagenomic. We only look at a small fraction of the samples and DNA. 
 Metagenomic answers questions about what is there and what they are doing there. 
+
+
 <p align="center">
-  <img src="https://github.com/sheewani/metagenomic-pipeline/blob/cbfb50041d47373acf04fafa330854e710873e5d/Screenshot%202025-01-15%20at%209.44.24%E2%80%AFAM.png" alt="pic1" width="7000" />
+  <img src="Biocrust_Microbial_Community.png" alt="Biocrust_Microbial_Community" width="7000" />
 </p>
 
-Image Source:https://astrobiomike.github.io/misc/amplicon_and_metagen
+
+<p align="center">
+  <img src="Method.png" alt="metagenomic overview" width="7000" />
+</p>
+
+<p align="center">
+  <img src="Ecology_Community_Interaction.png" alt="biotic and abiotic interaction" width="7000" />
+</p>
+
+
 
 ## Download the datasets
 In this project 60 raw sequences were dowloaded from NCBI using SRA accesssion number through `prefetch`  `fastqdump`. 
 **Make sure you install SRA toolkit**
 
-
+## Computational Work Overview
    
     $ fastq-dump --gzip --skip-technical --readids --read-filter pass --dumpbase --split-3 --clip --outdir path/to/reads/ SRR_ID
 
