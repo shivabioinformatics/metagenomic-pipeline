@@ -181,12 +181,12 @@ It requires building a profile based on a training datasets. It is like machine 
 
 HMM starts with a multiple sequence alignment. It targets region that are conserved versus what is less conserved. This is where the accuracy and sensitivity come in. 
 
+ 
 
-<div style="text-align: center;">
-    <img src="clustal_example.jpg" alt="pic2" width="700" />
-</div>
+<p align="center">
+    <img src="clustal_example.jpg" alt="pic2" width="500" />
+</p>
 source: http://compbio.pbworks.com/w/page/16252909/Multiple%20Sequence%20Alignment
-
 
 
 The sotware that has been used here to look for photon related genes in my assemblies file is **MagicLamp** https://github.com/Arkadiy-Garber/MagicLamp which is a sotware for annotations genomic or metagenomic datasets and it is HMM sets. There are different genies in these software that comes with the package when installing it on your system. However, there is options where your unique questions and genies cant be found here and you can actully upload your costume HMM which is an easy process. More information and installation can be found in the github page. 
@@ -243,10 +243,9 @@ __Important links in this section :)__
 Here, I will past the R-Dot plot of the result of the magiclamp software that we ran on our contigs, and here, since we specifically look at the genes that are photon-related (Lucifer genie) or light-related, we can see which genes are involved as a response to light. 
 ___ 
 
-<figure>
-  <img src="2.png" alt="Figure 2. A survey of photo-related genes. Profile Hidden Markov Model survey of genes related to photobiology.">
-  <figcaption>A survey of photo-related genes. Profile Hidden Markov Model survey of genes related to photobiology.</figcaption>
-</figure>
+<p align="center">
+  <img src="2.png" alt="Figure 2. A survey of photo-related genes. Profile Hidden Markov Model survey of genes related to photobiology." width="500">
+</p>
 
 ___
 
@@ -256,9 +255,8 @@ ___
 
 This dot plot is the first step in answering this hypothesis: whether the biocrust microbial community in the Mojave desert carries any proteorhopsin genes. Based on the 
 We can safely say that the dot for proteorhopsin genes, which are in the Y-axis, are prevalent among different microhabitats. 
-<figure>
-  <img src="pipeline_metagenomic.png" >
-  <figcaption> Metagenome Pipeline Workflow.</figcaption>
-</figure>
+<p align="center">
+  <img src="pipeline_metagenomic.png" width="500" >
+</p>
 
 This pipeline is not finished yet; the analysis will continue, and this pipeline is currently being updated. 
