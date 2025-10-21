@@ -4,7 +4,7 @@
 This pipeline is inspired by my master's thesis at Cal State LA. Given the unique ecological and geological aspects of my samples, which are from the Mojave Desert, I intend to focus on identifying light-related genes in these samples. I will filter low-quality reads, perform assembly, identify open reading frames associated with light-related genes, count the predicted proteins, and construct a phylogenetic tree.
 
 
-#### Definition of Metagenomic 
+### Definition of Metagenomic 
 This is shotgun metagenomic. We only look at a small fraction of the samples and DNA. 
 Metagenomic answers questions about what is there and what they are doing there. 
 
@@ -21,16 +21,16 @@ Metagenomic answers questions about what is there and what they are doing there.
 </p>
 
 
-
-## Download the datasets
-In this project 60 raw sequences were dowloaded from NCBI using SRA accesssion number through `prefetch`  `fastqdump`. 
-**Make sure you install SRA toolkit**
-
 ## Computational Work Overview
+
+### Download the datasets
+In this project, 60 raw sequences were downloaded from NCBI using SRA accession number through `prefetch`  `fastqdump`. 
+**Make sure you install the SRA toolkit**
+
    
     $ fastq-dump --gzip --skip-technical --readids --read-filter pass --dumpbase --split-3 --clip --outdir path/to/reads/ SRR_ID
 
-this command is to download and process SRA data, ensuring it is properly filtered, compressed, and saved in the desired location, ready for downstream analysis.
+This command is to download and process SRA data, ensuring it is properly filtered, compressed, and saved in the desired location, ready for downstream analysis.
 
 ---
 __Important links in this section :)__
@@ -40,30 +40,27 @@ __Important links in this section :)__
 
 ---
 
-This pipeline is not finished yet, the analysis will continue and this pipeline is being updated currently. 
-
-
 With **one** sample SRR# 
 ```
 prefetch SRR#
 ```
-then fastq-dump, the SRR accession numbers should found under project name at NCBI under samples 
+Then, with fastq-dump, the SRR accession numbers should be found under the project name at NCBI under samples 
 ```
 fasterq-dump SRR#
 ```
 
-For loop for more than one metagenome, you can process it faster by writing a for loop in bash download all the samples in this case 60 samples. 
-It is always a good practice to write all the ID names in separate files (.txt) for a variety of commands. Here we can use it for parallel download. 
+For loop for more than one metagenome, you can process it faster by writing a for loop in bash, downloading all the samples, in this case, 60 samples. 
+It is always a good practice to write all the ID names in separate files (.txt) for a variety of commands. Here we can use it for parallel downloads. 
 
 ```
 for i in$(cat <SRR list>.txt) do ;  prefetch $i ; fastq-dump --splitfiles $i
 ```
-Here my list.txt file is the file containing all of my sample id manes and is used to  process a list of Sequence Read Archive (SRA) accession numbers (e.g., SRR1234567, SRR1234568) from a file named <SRR list>.txt. 
+Here, my list.txt file is the file containing all of my sample id manes and is used to  process a list of Sequence Read Archive (SRA) accession numbers (e.g., SRR1234567, SRR1234568) from a file named <SRR list>.txt. 
 
 1. Reads the file **<SRR list>**.txt line by line.
 2. Download the **SRA** file corresponding to each accession number using Prefetch.
 3. Converts the SRA file into **FASTQ format** with fastq-dump, **splitting** paired-end reads into separate files if applicable.
-4. Repeats this process for every accession number in the list.
+4. Repeat this process for every accession number in the list.
 
 ## Quality trimming/filtering
 
@@ -71,7 +68,7 @@ Typically, sequencing facilities provide sequencing data in FASTQ files. The FAS
 
 A highly user-friendly tool, **FastQC**, provides a comprehensive overview of data quality. It can identify common issues and guide your quality-filtering decisions effectively.
 
-most often for quality filtering due to its flexibility would be **Trimmomatic**.
+most often, for quality filtering due to its flexibility, would be **Trimmomatic**.
 
 ---
 __Important links in this section :)__
@@ -80,7 +77,7 @@ __Important links in this section :)__
 - __[Trimmomatic](http://www.usadellab.org/cms/?page=trimmomatic)__ - read trimming tool for Illumina NGS
 
 ---
-Trimming using trimmomatic and the parametrets that were used is shown below:
+Trimming using trimmomatic and the parameters that were used are shown below:
 ```
 # Run Trimmomatic in parallel for multiple paired-end FASTQ files
 # Adjust NUM_SAMPLES, THREADS, and paths as needed
@@ -108,7 +105,7 @@ How it trimmomatic is trimming:
 | Quality trimming | `SLIDINGWINDOW:4:15` | Cuts when average Q < 15 over 4 bp | Q < 15                    |
 | Length filter    | `MINLEN:36`          | Drops reads shorter than 36 bp     | 36 bp                     |
 
-## Assembly
+### Assembly
 Assembly is basically like a puzzle that has so many pieces and you have to build it up and guess which piece belong to where. There are varieties of assemblers are out there and each has its own pros and cons. Here I will introduce two assemblers which are more popular for microbial genomics including metagenomics. 
 
 One of them is MEGAHIT which is a de novo assembler meaning without templates. It is designed for large and complex metagenomic datasets, using a succinct de Bruijn graph (SdBG) approach for memory efficiency and speed. It begins by preprocessing reads to remove low-quality sequences and adapters, followed by extracting k-mers (substrings of length \( k \)) across multiple \( k \)-mer sizes (multi-\( k \) strategy) to improve assembly accuracy. The SdBG efficiently represents overlaps between k-mers, reducing memory usage. MEGAHIT simplifies the graph by removing tips (dead-ends), bubbles (parallel paths), and collapsing repeats, ensuring a cleaner assembly. Iterative assembly refines the graph using smaller \( k \)-mers for sensitivity to low-abundance reads and larger \( k \)-mers for resolving repetitive regions. Contigs are then constructed from the simplified graph and output in FASTA format. Its multi-threading capability enhances speed, and the use of multi-\( k \) improves assembly quality for datasets with varying coverage, making MEGAHIT ideal for metagenomic studies on standard computational resources.
@@ -212,15 +209,15 @@ After running magiclamp, you will get two different files, both are in CSV file.
 The heatmap hits will be used to run it on an R script for dot plots and the other csv summary file will be used for downatream analysis such as alignment and phylogentic tree constructions.
 
 
-### Why HMM Search/Probabilistic Approach to Homology
+#### Why HMM Search/Probabilistic Approach to Homology
 
-#### Pairwise Sequence Alignment/Multiple Sequence Alignment
+##### Pairwise Sequence Alignment/Multiple Sequence Alignment
 In this approach, the aligner compares sequeces directlty based on nucleotides or amino acid similarities usign subsitution matrices ( BLOSUM, PAM). It works well for closely related sequences but struggle with the distant homology detection. It penlized with fixed gap penalities. <br>
 
-#### Profile Hidden Markov Model (HMM) Alignment
+##### Profile Hidden Markov Model (HMM) Alignment
 However, in pHMM, it uses statistical model (profile HMM) trained on multiple sequence alignment to capture position-specific conservation patterns (insertions, deletions, highly conserved positions). It is excelent for distant homologs. <br>
 
-##### When to Use Profile HMMs?<br>
+###### When to Use Profile HMMs?<br>
 When aligning sequences with high variability but conserved functional motifs.
 When searching for remote homologs in metagenomic or evolutionary studies.
 When building custom protein/domain families (e.g., Pfam).
