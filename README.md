@@ -8,18 +8,16 @@ This pipeline is inspired by my master's thesis at Cal State LA. Given the uniqu
 This is shotgun metagenomic. We only look at a small fraction of the samples and DNA. 
 Metagenomic answers questions about what is there and what they are doing there. 
 
-
 <p align="center">
-  <img src="Biocrust_Microbial_Community.png" alt="Biocrust_Microbial_Community" width="7000" />
-</p>
-
-
-<p align="center">
-  <img src="Method.png" alt="metagenomic overview" width="7000" />
+  <img src="Method.png" alt="metagenomic overview" width="500" />
 </p>
 
 <p align="center">
-  <img src="Ecology_Community_Interaction.png" alt="biotic and abiotic interaction" width="7000" />
+  <img src="Biocrust_Microbial_Community.png" alt="Biocrust_Microbial_Community" width="500" />
+</p>
+
+<p align="center">
+  <img src="Ecology_Community_Interaction.png" alt="biotic and abiotic interaction" width="500" />
 </p>
 
 
