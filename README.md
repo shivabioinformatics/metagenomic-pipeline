@@ -22,6 +22,9 @@ Metagenomic answers questions about what is there and what they are doing there.
 
 
 ## Computational Work Overview
+<p align="center">
+  <img src="pipeline_metagenomic.png" width="500" >
+</p>
 
 ### Download the datasets
 In this project, 60 raw sequences were downloaded from NCBI using SRA accession number through `prefetch`  `fastqdump`. 
@@ -241,11 +244,6 @@ __Important links in this section :)__
 
 ---
 Here, I will past the R-Dot plot of the result of the magiclamp software that we ran on our contigs, and here, since we specifically look at the genes that are photon-related (Lucifer genie) or light-related, we can see which genes are involved as a response to light. 
-___ 
-
-<p align="center">
-  <img src="2.png" alt="Figure 2. A survey of photo-related genes. Profile Hidden Markov Model survey of genes related to photobiology." width="500">
-</p>
 
 ___
 
