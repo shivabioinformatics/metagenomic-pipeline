@@ -1,6 +1,6 @@
 # metagenomic-pipeline
-
-## Research Background Overview
+Created a web app for this pipeline: https://shivasadeghpour.streamlit.app/
+## Research Background Overview 
 This pipeline is inspired by my master's thesis at Cal State LA. Given the unique ecological and geological aspects of my samples, which are from the Mojave Desert, I intend to focus on identifying light-related genes in these samples. I will filter low-quality reads, perform assembly, identify open reading frames associated with light-related genes, count the predicted proteins, and construct a phylogenetic tree.
 
 
