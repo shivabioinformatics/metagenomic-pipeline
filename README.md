@@ -9,21 +9,21 @@ This is shotgun metagenomic. We only look at a small fraction of the samples and
 Metagenomic answers questions about what is there and what they are doing there. 
 
 <p align="center">
-  <img src="Method.png" alt="metagenomic overview" width="500" />
+  <img src="images/Method.png" alt="metagenomic overview" width="500" />
 </p>
 
 <p align="center">
-  <img src="Biocrust_Microbial_Community.png" alt="Biocrust_Microbial_Community" width="500" />
+  <img src="images/Biocrust_Microbial_Community.png" alt="Biocrust_Microbial_Community" width="500" />
 </p>
 
 <p align="center">
-  <img src="Ecology_Community_Interaction.png" alt="biotic and abiotic interaction" width="500" />
+  <img src="images/Ecology_Community_Interaction.png" alt="biotic and abiotic interaction" width="500" />
 </p>
 
 
 ## Computational Work Overview
 <p align="center">
-  <img src="pipeline_metagenomic.png" width="500" >
+  <img src="images/pipeline_metagenomic.png" width="500" >
 </p>
 
 ### Download the datasets
@@ -187,7 +187,7 @@ HMM starts with a multiple sequence alignment. It targets region that are conser
  
 
 <p align="center">
-    <img src="clustal_example.jpg" alt="pic2" width="500" />
+    <img src="images/clustal_example.jpg" alt="pic2" width="500" />
 </p>
 source: http://compbio.pbworks.com/w/page/16252909/Multiple%20Sequence%20Alignment
 
@@ -254,7 +254,7 @@ ___
 This dot plot is the first step in answering this hypothesis: whether the biocrust microbial community in the Mojave desert carries any proteorhopsin genes. Based on the 
 We can safely say that the dot for proteorhopsin genes, which are in the Y-axis, are prevalent among different microhabitats. 
 <p align="center">
-  <img src="pipeline_metagenomic.png" width="500" >
+  <img src="images/pipeline_metagenomic.png" width="500" >
 </p>
 
 This pipeline is not finished yet; the analysis will continue, and this pipeline is currently being updated. 
