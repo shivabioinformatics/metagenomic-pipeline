@@ -180,9 +180,9 @@ The existence of a contig this long is positive. It suggests that at least one o
 
 ### HMM Search
 ***Hidden Markov Model*** (HMM) is position sensitive models and it is a probabibilistic approach where it incorporate random variables and probability distributions into the model of an event of phenomenon. 
-It requires building a profile based on a training datasets. It is like machine learning approaches.  It is very sensitive. 
+It requires building a profile based on a training dataset. This approach is very sensitive and time efficient, which uses machine learning algorithms that were initially used for voice recognition and now used in computational biology for searching homologous genes of interest. 
 
-HMM starts with a multiple sequence alignment. It targets region that are conserved versus what is less conserved. This is where the accuracy and sensitivity come in. 
+HMM starts with a multiple sequence alignment. It targets regions that are conserved versus what is less conserved. This is where the accuracy and sensitivity come in. 
 
  
 
